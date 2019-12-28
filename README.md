@@ -46,7 +46,9 @@ Once the player successfully defeats an enemy by reducing their HP to 0, they wi
 After certain battles, the player will be asked if they would like to shop for items or heal themselves using the gold they've earned from battles. These items can then be purchased and subsequently used in combat to assist the player. Example items include:
 
 **bomb**: instantly deals damage to the enemy
+
 **potions/super potions**: heals the player for a specified amount of HP
+
 **sand bomb**: reduces the enemy's accuracy by a specified amount
 
 In addition, the player may choose to upgrade their armor (increasing their max HP) or upgrade their sword (increasing their attack damage) in the shop. Equipment can be upgraded 2 times in total.
