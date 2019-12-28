@@ -1,6 +1,6 @@
 # MonsterRPG2.0
 
-A new and improved version of MonsterRPG that adds new mechanics to spice things up
+A new and improved version of MonsterRPG that adds new mechanics to spice things up as well as cleans up unorganized code from when I was a first-time CS student in high school 
 
 MonsterRPG is a text-based turn-based Role Playing Game (RPG), inspired by the battle system in Pokemon. The player begins with a set amount of HP as well as a base attack damage range that can both be upgraded throughout the course of the game. The aim of the game is to successfully advance through 10 fights against monsters of increasing difficulty.
 
