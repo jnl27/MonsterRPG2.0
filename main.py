@@ -91,15 +91,15 @@ def fight(enemy, enemyHP, enemymaxHP, mindmg, maxdmg, enemyaccuracy):
             if action.lower() == "attack":
                 print("You swing your sword at the", enemy)
                 time.sleep(1)
-                if random.randrange(1,100)<=playeraccuracy:
+                if random.randrange(1,101)<=playeraccuracy:
                     if sword == "Wooden Sword":
-                        playerdmg = random.randrange(1,10)
+                        playerdmg = random.randrange(1,11)
                     elif sword == "Steel Sword":
-                        playerdmg = random.randrange(7,15)
+                        playerdmg = random.randrange(7,16)
                     elif sword == "Diamond Sword":
-                        playerdmg = random.randrange(10,30)
+                        playerdmg = random.randrange(10,31)
                     elif sword == "RNGsus Sword":
-                        playerdmg = random.randrange(1,666)
+                        playerdmg = random.randrange(1,667)
                     enemyHP-=playerdmg
                     print("Your swing did ", playerdmg, "damage!")
                     if enemyHP>0:
@@ -136,7 +136,7 @@ def fight(enemy, enemyHP, enemymaxHP, mindmg, maxdmg, enemyaccuracy):
                             print("You summon a fireball at the", enemy)
                             time.sleep(1)
                             playerMP-=firecost
-                            if random.randrange(1,100)<=fireaccuracy:
+                            if random.randrange(1,101)<=fireaccuracy:
                                 enemyHP-=firedmg
                                 print("The fireball did", firedmg, "damage!")
                                 time.sleep(1)
@@ -156,7 +156,7 @@ def fight(enemy, enemyHP, enemymaxHP, mindmg, maxdmg, enemyaccuracy):
                     elif magic.lower() == "ice shards":
                         if playerMP>=icecost:
                             print("You threw ice shards at the", enemy)
-                            icehit = random.randrange(1,3)
+                            icehit = random.randrange(1,4)
                             for i in range(icehit):
                                 print("Bam Bam Bam")
                                 print("An ice shard hits the", enemy)
@@ -336,8 +336,8 @@ def fight(enemy, enemyHP, enemymaxHP, mindmg, maxdmg, enemyaccuracy):
         if enemyHP>0:
             print("Enemy", enemy, "attacks!")
             time.sleep(1)
-            if random.randrange(1,100)<=enemyaccuracy:
-                enemydmg = random.randrange(mindmg, maxdmg)
+            if random.randrange(1,101)<=enemyaccuracy:
+                enemydmg = random.randrange(mindmg, maxdmg+1)
                 playerHP-=enemydmg
                 print("Ouch! Enemy", enemy, "did", enemydmg, "damage!")
             else:
@@ -607,7 +607,7 @@ while typo == True:
             #fight1
             roundbegin()
             print("A wild mini goblin has appeared! It has 10HP, deals 3-6 damage, and has relatively good accuracy. It will drop 20-50 gold when defeated.")
-            gold = random.randrange(20,50)
+            gold = random.randrange(20,51)
             fight("Goblin", 10, 10, 3, 6, 80)
             afterbattle()
             print()
@@ -615,13 +615,13 @@ while typo == True:
             #fight2
             roundbegin()
             print("A wicked troll has appeared! It has 15HP, deals 5-8 damage, and has good accuracy. It will drop 40-60 gold when defeated.")
-            gold = random.randrange(40,60)
+            gold = random.randrange(40,61)
             fight("Troll", 15, 15, 5, 8, 75)
             afterbattle2()
             #fight3
             roundbegin()
             print("A gang of goblins has appeared! They have 25HP, deal 2-10 damage, and have superb accuracy. They will drop 20-50 gold when defeated.")
-            gold = random.randrange(20,50)
+            gold = random.randrange(20,51)
             fight("Goblin Gang", 25, 25, 2, 10, 90)
             afterbattleshop()
             #fight4
@@ -645,13 +645,13 @@ while typo == True:
             print()
             print("Protip: WARNING - Shadow Knight is a mini-boss. He is significantly stronger than all the enemies you have faced so far. Be careful!")
             time.sleep(1)
-            gold = random.randrange(70,100)
+            gold = random.randrange(70,101)
             fight("Shadow Knight", 45, 45, 12, 20, 100)
             afterbattleshop()
             #fight6
             roundbegin()
             print("A Large Goblin has appeared! It has 35HP, deals 7-12 damage, and has decent accuracy. It will drop 30-70 gold when defeated.")
-            gold = random.randrange(30,70)
+            gold = random.randrange(30,71)
             fight("Large Goblin", 35, 35, 7, 12, 70)
             afterbattle()
             print()
@@ -659,7 +659,7 @@ while typo == True:
             roundbegin()
             print("A Haunting Banshee has appeared! It has 30HP, deals 10-20 damage, and has superb accuracy! It will drop 50-80 gold when defeated.")
             print("Banshee: 'EEEEEEEEEEEEEEEEEEEEEEE'")
-            gold = random.randrange(50,80)
+            gold = random.randrange(50,81)
             fight("Haunting Banshee", 30, 30, 10, 20, 90)
             afterbattleshop()
             print()
@@ -668,13 +668,13 @@ while typo == True:
             roundbegin()
             print("A Sturdy Golem has appeared! It has 80HP, deals 8-15 damage, but has poor accuracy. It will drop 100-150 gold when defeated.")
             print("Golem: '...'")
-            gold = random.randrange(100,150)
+            gold = random.randrange(100,151)
             fight("Sturdy Golem", 70, 70, 3, 15, 40)
             afterbattleshop()
             #fight9
             roundbegin()
             print("A Two-Headed Hydra has appeared! It has 60HP, deals 12-20 damage, and has good accuracy! It will drop 80-130 gold when defeated.")
-            gold = random.randrange(80,130)
+            gold = random.randrange(80,131)
             fight("Two-Headed Hydra", 60, 60, 12, 20, 75)
             print()
             print("Protip: This is your LAST chance to shop/heal, make sure you're ready for the next fight!")
